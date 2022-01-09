@@ -31,6 +31,10 @@ To install the extension visit the this page and still it right on your browser,
 
 Would you like to contribute to this project? We are always looking for new ideas and new features. If you have any suggestions or ideas please let us know!
 
+### Installation for Contribution:
+
+Just clone the repository and install the extension via unpacked extension from your chrome extension settings. Will post a more elaborate installation guide once we have a stable version.
+
 ### Steps to Contribute
 
 - Fork the project on github
