@@ -1,5 +1,9 @@
 # Youtube Bookmarks
 
+<!-- iMAGE -->
+
+![Logo Image](./assets/logo.png)
+
 Have you ever been frustated by the fact you have to trace back to the last part of a youtube video? Does it feel weird to swipe the entire video back and forth to find that point? Well, this is a solution to that problem.
 
 ## Youtube Bookmarks: A bookmark system for youtube videos.
