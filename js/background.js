@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     window.videos[request.videoTitle] = {
       url: request["url"],
       currentTime: request["currentTime"],
+      searchURL: request["searchURL"],
     };
   } else if (request.action === "remove") {
     delete window.videos[request.title];

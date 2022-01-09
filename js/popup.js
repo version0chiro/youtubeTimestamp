@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.keys(bg.videos).forEach(function (title) {
     const time = bg.videos[title].currentTime;
 
+    const searchURL = bg.videos[title].searchURL;
+
     // convert time string into seconds
     const timeInSeconds = time.split(":").reduce(function (acc, curr) {
       return acc * 60 + parseInt(curr);
@@ -28,10 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const a = document.createElement("button");
 
-    const url = bg.videos[title].url;
+    // extract params from url
+    const params = new URLSearchParams(searchURL);
 
-    a.href = url.substr(0, url.lastIndexOf("")) + "?t=" + timeInSeconds;
-    a.innerText = a.href;
+    a.innerText = "Open";
+
+    a.href =
+      "https://www.youtube.com/watch?v=" +
+      params.get("v") +
+      "&t=" +
+      timeInSeconds;
 
     //https://youtu.be/PnUnL5xdMkM?t=407
 

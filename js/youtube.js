@@ -23,12 +23,15 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
       // play video
       document.getElementsByClassName("ytp-play-button ytp-button")[0].click();
 
+      const searchURL = document.location.search;
+
       // send the data to the background script
       chrome.runtime.sendMessage({
         url: window.location.href,
         videoTitle: videoTitle,
         currentTime: currentTime,
         action: "save",
+        searchURL: searchURL,
       });
     }
   } else if (request.action === "remove") {
