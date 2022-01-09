@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "Adds timestamps to Youtube videos",
+  "icons": {
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
@@ -11,7 +16,8 @@
   ],
   "browser_action": {
     "default_title": "Youtube Timestamps",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "assets/logo.png"
   },
   "background": {
     "scripts": ["js/background.js"]

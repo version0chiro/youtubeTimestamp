@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const li = document.createElement("li");
     li.innerText = title + ": " + time;
 
-    li.className = "font-weight-bold";
+    li.className = "font-weight-bold w-1/2";
 
     // add the url as href for li
 
