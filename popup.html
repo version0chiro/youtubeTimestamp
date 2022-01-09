@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="p-1 flex flex-col justify-center w-full bg-gradient-to-br from-red-300 to-white"
+    >
+      <div id="button_div" class="flex flex-col justify-center align-middle">
+        <button
+          id="save_button"
+          class="bg-red-300 hover:bg-red-400 text-white font-bold py-2 px-4 rounded"
+        >
+          Click me to save bookmarks
+        </button>
+      </div>
+      <h1 class="font-bold">All your youtube time stamps will come here!!</h1>
+      <ul id="timestamps"></ul>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
